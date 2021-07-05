@@ -4,31 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="introducao-credito.css" />
     <title>ProwayBank - Crédito</title>
   </head>
-  <body style="background-color: #ffb800">
+  <body>
     <header>
       <nav>
         <a onclick="message()">
-          <svg
-            width="16"
-            height="16"
-            viewBox="0 0 16 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M16 7H3.83L9.42 1.41L8 0L0 8L8 16L9.41 14.59L3.83 9H16V7Z"
-              fill="white"
-            />
-          </svg>
+          <img src="icon-voltar.svg" alt="icone de voltar" />
         </a>
-        <span style="color: white">Crédito</span>
+        <a onclick="titleClick()">
+          <h1>Crédito</h1>
+        </a>
       </nav>
     </header>
     <main>
-      <section>
+      <section class="bem-vindo-box">
         <img
+          id="foto-perfil"
           src="https://avatars.githubusercontent.com/u/52057913?v=4"
           alt="foto perfil"
         />
@@ -37,15 +30,31 @@
           <span>Ellian Aragão Dias</span>
         </div>
       </section>
-      <section style="background-color: #ededed">
-        teste de texto
+      <section class="content-box">
+        <h2>Introdução ao Crédito</h2>
+        <article>
+          <h3>EMPRÉSTIMOS E FINANCIMENTOS</h3>
+          <p>
+            Crédito é sinônimo de confiança. O reconhecimento da boa reputação.
+            Por isso se diz: fulano tem crédito comigo. Significa também a
+            capacidade de honrar um compromisso, seja ele financeiro ou não.
+          </p>
+          <p>
+            Crédito é, ainda, o contrato entre um consumidor – pessoa ou empresa
+            chamada de tomador ou devedor – e uma instituição financeira –
+            chamada credora. Nesse contrato, a instituição oferece ao consumidor
+            um valor que deverá ser devolvido em um prazo determinado acrescido
+            de juros. As operações de crédito são divididas entre financiamentos
+            e empréstimos.
+          </p>
+        </article>
+        <div class="content-buttons">
+          <button onclick="buttonFaleConosco()">Fale conosco</button>
+          <button onclick="buttonMostrarCredito()">Motrar os créditos</button>
+        </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>created by: Ellian Aragão Dias</footer>
   </body>
-  <script>
-    function message() {
-      alert('voltar');
-    }
-  </script>
+  <script src="introducao-credito.js"></script>
 </html>
