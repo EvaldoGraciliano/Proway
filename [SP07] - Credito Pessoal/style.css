@@ -1,0 +1,166 @@
+/* CONFIGURAÇÕES DA PAGINA */
+:root{
+    --cor-principal: #FFB800;
+    --cor-secundaria: #efefef;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: var(--cor-secundaria);
+}
+
+body{
+    font-family: OpenSans;
+}
+
+/* CABEÇALHO */
+.seta{
+    display: none;
+}
+
+.cabecalho{
+    height: 200px;
+    background-color: var(--cor-principal);     
+   
+    padding-top: 10px;
+
+    color: #fff;
+}
+
+.navegacao{
+    display: flex;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.navegacao a, h3{
+    display: flex;
+    justify-content: center;
+}
+
+.navegacao a:first-child {
+    margin-left: 1rem;
+    justify-content: left;
+    align-content: center;
+    align-self: center;
+  }
+
+.navegacao img{
+    height: 30px;
+}
+
+/* CONTEUDO PRINCIPAL */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 85vh;
+    background-color: var(--cor-secundaria);
+
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+
+    margin-top: -90px;
+
+}
+
+.info-credito{
+    min-width: 250px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: -30px;
+
+    font-weight: bold;
+}
+
+.valor-cred{
+    display: flex;
+    align-items: center;
+
+    font-size: 1.5rem;
+}
+
+.valor-cred img{
+    margin-left: 10px;
+}
+
+.formulario{
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    
+    height: 60vh;
+}
+
+.inputs{
+    width: 50vw;
+    font-weight: bold;
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 20px;
+}
+
+.form-input label{
+    margin-bottom: 5px;
+}
+
+.form-input input{
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+
+    padding-left: 10px;
+}
+
+.form-input input:focus{
+    outline: none;
+}
+
+.calc-parcelas{
+    margin-top: 4rem;
+}
+
+.calc-parcelas span{
+    color: red;
+}
+
+.botao{
+    border: 0;
+    padding: 2vw;
+    margin: 1rem;
+    background: var(--cor-principal);
+    border-radius: 50px;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+@media (max-width: 700px) {
+    .seta{
+        display: block;
+    }
+    .logo{
+        display: none;
+    }
+}
