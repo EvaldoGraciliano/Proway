@@ -55,6 +55,7 @@ body{
 }
 
 /* CONTEUDO PRINCIPAL */
+
 .container{
     display: flex;
     flex-direction: column;
@@ -70,78 +71,53 @@ body{
 
 }
 
-.info-credito{
+.info-usuario{
     min-width: 250px;
-    height: 70px;
+    
     background-color: #fff;
     border-radius: 20px;
     display: flex;
 
-    flex-direction: column;
+    
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 
     margin-top: -30px;
 
-    font-weight: bold;
+    padding: 20px;
 }
 
-.valor-cred{
+.info-usuario img{
+    border-radius: 100px;
+}
+
+.info-usuario .texto-usuario p{
+    font-size: small;
+}
+
+.info-usuario .texto-usuario h3{
+    margin-top: 15px;
+}
+
+.resposta{
     display: flex;
+    flex-direction: column;
     align-items: center;
 
-    font-size: 1.5rem;
+    text-align: center;
+
+    height: 100%;
+    justify-content: space-around;
 }
 
-.valor-cred img{
-    margin-left: 10px;
-}
-
-.formulario{
-    margin-top: 20px;
-
+.resposta article{
     display: flex;
-    flex-direction: column;
 
-    justify-content: space-between;
-    
-    height: 60vh;
+    align-items: center;
 }
 
-.inputs{
-    width: 50vw;
-    font-weight: bold;
-}
-
-.form-input{
-    display: flex;
-    flex-direction: column;
-
-    margin-top: 20px;
-}
-
-.form-input label{
-    margin-bottom: 5px;
-}
-
-.form-input input{
-    height: 35px;
-    border-radius: 10px;
-    border: none;
-
-    padding-left: 10px;
-}
-
-.form-input input:focus{
-    outline: none;
-}
-
-.calc-parcelas{
-    margin-top: 4rem;
-}
-
-.calc-parcelas span{
-    color: red;
+.resposta article img{
+    margin-right: 10px;
 }
 
 .botao{

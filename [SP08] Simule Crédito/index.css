@@ -2,14 +2,16 @@
 nav {
 	color: white;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	margin-left:1rem;
+	grid-template-columns: 1fr 6fr 1fr; /* Foi feito 3 colunas e definido o tamanho de cada, a do meio é a maior*/
+	/*Grid é um comando que cria colunas dentro da div ou nav onde você pode organizar o tamanho da coluna ou onde cada tag vai ficar*/
 }
 nav a {
 	display: flex;
 	justify-content: center;
+	
 }
 nav a:first-child {
-	margin-left: 1rem;
 	justify-content: left;
 	align-content: center;
 	align-self: center;
@@ -17,8 +19,8 @@ nav a:first-child {
 
 /*Conteúdo da página*/
 body {
-	background-color: #ffb800;
-	margin: 0;
+	background-color: #ffb800; /*Cor de fundo*/
+	margin: 0; /*Margin 0 para que ocupe toda a tela sem a margem default*/
 	font-family: Arial, Helvetica, sans-serif;
 	width: 100%;
 }
@@ -38,11 +40,12 @@ body {
 	text-align: justify;
 	font-family: Arial, Helvetica, sans-serif;
 }
-.menu{
-	margin-left: 2rem;
+.dataPagt{
+	margin-left: 2rem; /* Margem a esquerda de 2rem*/
 }
 select{
-	padding: 5px;
+	padding: 5px; /* Tamanho do campo de seleção*/
+	border-radius: 5px; /*Bordas*/
 }
 input{
 	border-radius: 5px;
@@ -50,6 +53,8 @@ input{
 	padding: 5px;
 	border: 1px solid gray;
 }
+
+/*Códigos para o botão "Realizar Pedido" */
 div {
 	display: flex;
 	justify-content: center; /* Justificação do conteúdo(Centralizado)*/
