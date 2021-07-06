@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
+    <title>Simule Crédito</title>
+  </head>
+ <body>
+	<header>
+      <nav>
+		  <a>
+			<img src="icon-voltar.svg" alt="icone de voltar" />
+		  </a>
+          <h1>Simule a melhor opção de crédito para você</h1>
+      </nav>
+    </header>
+	<main>
+			<section class="content-box">
+				<article>
+					<p><b> Você deseja comprar algo específico ?</b></p>
+						<select>
+						<option class= "ano" value="">Peças de Informática</option>
+						<option class= "ano" value="">Contas Atrasadas</option>
+						<option class= "ano" value="">Outros</option>
+						</select>	
+					<p><b> Qual valor que deseja ?</b></p>
+					<input  id="marca" class = "input" step="0.1" placeholder="R$">
+					<p><b> Quantidade de parcelas que deseja ?</b></p>
+						<select>
+						<option value="">1x</option>
+						<option value="">2x</option>
+						<option value="">3x</option>
+						<option value="">4x</option>
+						<option value="">5x</option>
+						<option value="">6x</option>
+						<option value="">7x</option>
+						<option value="">8x</option>
+						<option value="">9x</option>
+						<option value="">10x</option>
+						</select>
+					<p><b> Qual melhor dia de pagamento ?</b></p>
+					<input type="radio" name="dataPagamento" value="">5
+					<input type="radio" name="dataPagamento" value="">10
+					<input type="radio" name="dataPagamento" value="">20
+					<br>
+				</article>
+				<div>
+				<button class="button" id="botaopedido" onclick="RealizarPedido()"> Realizar Pedido</button>
+				</div>
+			</section>
+	</main>
+ </body>
+</html>
