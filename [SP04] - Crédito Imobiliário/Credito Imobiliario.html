@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Crédito Imobiliário</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="Style Imobiliario.css"/>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href>
+                    <img src="seta.png" alt="seta"/>
+                </a>  
+                <h1>Crédito Imobiliário</h1>
+            </nav>       
+        </header>
+        <main>
+            <p>Agora conte mais sobre o imóvel</p>
+            <form action method="get">
+                <section>
+                    <p>Tipo do Imóvel</p>
+                    <div>
+                        <input type="radio" id="residencial" name="tipoDeImovel" value="RESIDENCIAL"/>
+                        <label for="residencial">Residencial</label>
+                        <input type="radio" id="comercial" name="tipoDeImovel" value="COMERCIAL"/>
+                        <label for="comercial">Comercial</label>
+                    </div>
+                </section>
+                <section>
+                    <p>Quando você pretende adquirir o imóvel?</p>
+                    <select nome="tempoCompra" id="tempoCompra">
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="1">Volvo</option>
+                        <option value="2">Saab</option>
+                        <option value="3">Opel</option>
+                        <option value="4">Audi</option>
+                    </select>
+                </section>
+                <section>
+                    <p>Qual é a localização do imóvel?</p>
+                    <select nome="tempoCompra" id="tempoCompra">
+                        <option value="" disabled selected >Selecione</option>
+                        <option value="1">Volvo</option>
+                        <option value="2">Saab</option>
+                        <option value="3">Opel</option>
+                        <option value="4">Audi</option>
+                    </select>
+                </section>
+                <section>
+                    <p>Qual o valor do imóvel?</p>
+                    <input type="text" id="custoImovel" name="custoImovel"/>
+                </section>
+                <section>
+                    <p>E o valor a financiar?</p>
+                    <input type="text" id="valorFinanciamento" name="valorFinanciamento"/>
+                </section>
+                <section>
+                    <p>Qual o prazo em anos?</p>
+                    <input type="number" id="quantidadeDeAnos" name="quantidadeDeAnos" min="1" max="35">
+                </section>
+                <div id="botaoSubmit">
+                    <input type="submit" value="Realizar Pedido">
+                </div>
+            </form>
+            <footer class="copy">
+                <p>created by: Evert Barros Tavares</p>
+                <p>&copy; Copyright Banco ProWay - 2021</p>
+            </footer>
+        </main>
+    </body>
+</html>
