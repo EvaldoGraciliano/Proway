@@ -11,7 +11,7 @@ nav {
     display: grid;
     grid-template-columns: 1fr 11fr 1fr;
 }
-nav a {
+nav p {
     margin-left: 1rem;
     justify-content: left;
     align-content: center;
