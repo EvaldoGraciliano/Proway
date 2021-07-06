@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
+    <title>Financiamento de Veículos</title>
+  </head>
+ <body>
+	<header>
+      <nav>
+		  <a>
+			<img src="icon-voltar.svg" alt="icone de voltar" />
+		  </a>
+          <h1>Financiamento de Veículos</h1>
+      </nav>
+    </header>
+	<main>
+			<section class="content-box">
+				<article>
+					<p><b> Qual típo de veículo que você deseja?</b></p>
+					<input type="radio" name="tipoVeiculo" value="carro">Carro
+					<input type="radio" name="tipoVeiculo" value="moto">Moto
+					<p><b> Ano do veículo</b></p>
+					<select>
+					<option value="2021">2021</option>
+					<option value="2020">2020</option>
+					<option value="2019">2019</option>
+					<option value="2018">2018</option>
+					</select>					
+					<p><b> Qual valor do veículo desejado?</b></p>
+					<input  id="valor" class = "input" type="number" step="0.1" placeholder="R$">
+					<p><b>Marca do veículo</b></p>
+					<input  id="marca" class = "input" step="0.1" placeholder="BMW, Ford, Chevrolet,Honda">
+					<p><b> Novo ou Usado ?</b></p>
+					<input type="radio" name="novoUsado" value="carro">Novo
+					<input type="radio" name="novoUsado" value="moto">Usado
+					<br>
+				</article>
+				<div>
+				<button class="button" id="botaopedido" onclick="RealizarPedido()"> Realizar Pedido</button>
+				</div>
+			</section>
+	</main>
+ </body>
+</html>
