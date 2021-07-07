@@ -3,6 +3,7 @@ body {
   margin: 0;
   font-family: OpenSans;
   width: 100%;
+  height: 100vh;
 }
 main {
   width: 100%;
@@ -108,7 +109,7 @@ nav a img {
 footer {
   padding-top: 1rem;
   width: 100%;
-  height: 100%;
+  height: 3vh;
   background-color: #000000;
   color: grey;
   text-align: center;
@@ -127,6 +128,10 @@ footer {
     align-self: center;
     width: 70%;
   }
+  .content-box article {
+    width: 70%;
+    align-self: center;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -137,8 +142,7 @@ footer {
     width: 30rem;
   }
   .content-box article {
-    width: 60%;
-    align-self: center;
+    width: 35rem;
   }
   .content-box article div {
     display: flex;
