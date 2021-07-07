@@ -68,6 +68,9 @@ select {
     margin: 4rem auto;
 }
 #botaoSubmit input {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1rem;
     background-color: #FFB800;
     border: #FFB800;
     border-radius: 100px;
