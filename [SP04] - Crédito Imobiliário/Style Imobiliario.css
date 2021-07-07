@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 body {
-    background: #FFB800;
     margin: 0;
     font-family: "Open Sans", sans-serif;
 }
 header{
-    margin-bottom: 1rem;
+    background-color: #FFB800;
+    padding: 0.5rem 0 10rem 0;
 }
 nav {
     display: grid;
     grid-template-columns: 1fr 11fr 1fr;
 }
-nav p {
+nav a {
     margin-left: 1rem;
     justify-content: left;
     align-content: center;
@@ -25,6 +25,8 @@ h1{
     text-align: center;
 }
 main {
+    position: relative;
+    top: -6.5rem;
     background: #FFFFFF;
     border: 0px solid;
     border-radius: 50px 50px 0 0;
