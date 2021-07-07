@@ -7,24 +7,29 @@ body {
 }
 
 header{
-
-   
+    
     display: grid;
     grid-template-columns: 1fr 11fr 1fr;
     align-items: center;
    
+
+    
+
 }
 
 header h1 {
+
+   
     overflow-wrap: normal;
     text-align: center;
-    font-size: 1.12rem;
+    font-size: 18px;
     color:white;
-    font-family: 'Open Sans', sans-serif;
 }
 
 header a {
     margin-left: 0.3rem;
+  
+
 }
 
 
