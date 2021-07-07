@@ -4,6 +4,9 @@ body {
   font-family: OpenSans;
   width: 100%;
 }
+main {
+  width: 100%;
+}
 nav {
   color: white;
   display: grid;
@@ -23,32 +26,30 @@ nav a img {
   height: 1rem;
   width: 1rem;
 }
-.bem-vindo-box {
+.saldo-box {
   margin: 3vw;
-  display: flex;
   padding: 1rem;
   background-color: white;
   border-radius: 50px;
-}
-#foto-perfil {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50px;
-}
-.bem-vindo-box div {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-.bem-vindo-box div span:first-child {
-  margin: 0 0 0 1vh;
-  font-size: 11pt;
-}
-.bem-vindo-box div span {
-  margin: 2vh 0 0 1vh;
+.saldo-box span {
   font-weight: 600;
+  font-size: 12pt;
+}
+.saldo-box div {
+  display: flex;
+  align-items: center;
+}
+.saldo-box div span {
   font-size: 15pt;
 }
-
+.saldo-box div a {
+  margin: 1rem;
+  opacity: 0.3;
+}
 .content-box {
   display: flex;
   flex-direction: column;
@@ -57,40 +58,51 @@ nav a img {
   height: 100%;
   border-radius: 50px 50px 0 0;
 }
-.content-box h2 {
-  margin: 1rem 1rem 0;
-  padding: 1vh;
-  font-size: 14pt;
-}
-
-.content-box article {
-  background-color: white;
-  margin: 1rem;
-  padding: 1rem;
-  font-size: 11pt;
-  border-radius: 50px;
-  text-align: justify;
-}
-
-.content-box article h3 {
-  text-align: start;
-  font-size: 13pt;
-}
-
-.content-buttons {
+.content-box div {
   display: flex;
   flex-direction: column;
 }
-
-.content-buttons button {
-  border: 0;
-  padding: 2vw;
+.content-box article {
   margin: 1rem;
-  background: #ffb800;
-  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.content-box article img {
+  margin: 1rem;
+  border-radius: 20px;
+}
+.content-box article form {
+  display: flex;
+  flex-direction: column;
+}
+.content-box label {
+  margin: 1rem 0 0 1rem;
+  font-weight: 600;
+  font-size: 11pt;
+}
+.content-box input {
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+#submit-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem;
+  padding: 1vh;
+  background-color: #ffb800;
   color: white;
-  font-size: large;
-  font-weight: bold;
+  font-size: 15pt;
+  font-weight: 700;
+  border-radius: 50px;
+}
+#submit-button img {
+  margin: 0;
+  height: 4vh;
+  width: 4vh;
 }
 
 footer {
@@ -111,7 +123,7 @@ footer {
     display: flex;
     flex-direction: column;
   }
-  .bem-vindo-box {
+  .saldo-box {
     align-self: center;
     width: 70%;
   }
@@ -121,17 +133,23 @@ footer {
   main {
     align-self: center;
   }
-
-  .bem-vindo-box {
+  .saldo-box {
     width: 30rem;
   }
-  .content-box div {
+  .content-box article {
     width: 60%;
-    align-self: center
+    align-self: center;
   }
-  .content-buttons {
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-bottom: 2rem;
+  .content-box article div {
+    display: flex;
+    flex-direction: column;
+    justify-content:center
+  }
+  #submit-button {
+    align-self: flex-end;
+    padding: 1rem 2rem 1rem 2rem;
+  }
+  #submit-button img {
+    margin-left: 1rem;
   }
 }
