@@ -78,6 +78,10 @@ main ul li {
     padding: 2rem 1rem;
     margin-bottom: 1rem;
 }
+a {
+    text-decoration: none;
+    color: #000000;
+}
 h3 {
     font-size: 1.2rem;
     margin-left: .5rem;
