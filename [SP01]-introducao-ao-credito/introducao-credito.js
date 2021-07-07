@@ -11,5 +11,5 @@ function buttonFaleConosco() {
 }
 
 function buttonMostrarCredito() {
-  alert('mostra os créditos');
+  window.location.href="[SP02] - Menu/Menu.html";
 }
