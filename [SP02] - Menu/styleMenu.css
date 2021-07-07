@@ -32,6 +32,10 @@ main {
     justify-content: center;
     align-items: center;
 }
+h2{
+    display: flex;
+    justify-content:flex-start;
+}
 .bem-vindo-box {
     display: grid;
     grid-template-columns: 0fr 1fr;
