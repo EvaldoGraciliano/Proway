@@ -111,8 +111,6 @@ footer {
     display: flex;
     flex-direction: column;
   }
-
-
   .bem-vindo-box {
     align-self: center;
     width: 70%;
@@ -122,13 +120,15 @@ footer {
 @media only screen and (min-width: 768px) {
   main {
     align-self: center;
-    width: 768px;
   }
 
   .bem-vindo-box {
     width: 30rem;
   }
-
+  .content-box div {
+    width: 60%;
+    align-self: center
+  }
   .content-buttons {
     flex-direction: row;
     justify-content: flex-end;
