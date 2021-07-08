@@ -64,12 +64,15 @@ div {
 	font-family: Open Sans; /* Fonte */
 }
 button {
-	font-family: Arial, Helvetica, sans-serif;
-	padding: 2vw; /* Tamanho do botão(Espaçamento Dentro do conteúdo)*/
-	border-radius: 21px; /* Bordas do botão*/
-	margin: 2rem; /*Margem do botão*/
-	background: #FFB800; /* Cor de fundo do botão*/
-	Color: white; /* Cor da escrita*/
+    border: 0;
+    padding: 2vw;
+    margin: 1rem;
+    background: #ffc42d;
+    border-radius: 50px;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
 }
 button:hover{
 	color:black;
