@@ -172,12 +172,15 @@ main h2 {
 }
 
 .realizarpedido button{
-    height: 25px;
-    width: 135px;
-    background-color: #FFB800 ;
+    border: 0;
+    padding: 2vw;
+    margin: 1rem;
+    background: #ffc42d;
+    border-radius: 50px;
     color: white;
-    border-radius: 2rem;
-    border:none;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
     
 }
 

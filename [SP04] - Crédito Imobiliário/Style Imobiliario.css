@@ -68,12 +68,15 @@ select {
     margin: 4rem auto;
 }
 #botaoSubmit input {
-    color: #FFFFFF;
+    border: 0;
+    padding: 2vw;
+    margin: 1rem;
+    background: #ffc42d;
+    border-radius: 50px;
+    color: white;
+    font-size: large;
     font-weight: bold;
-    font-size: 1rem;
-    background-color: #FFB800;
-    border: #FFB800;
-    border-radius: 100px;
+    cursor: pointer;
 }
 main footer p {
     text-align: center;
