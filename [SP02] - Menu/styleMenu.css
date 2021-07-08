@@ -32,9 +32,9 @@ main {
     justify-content: center;
     align-items: center;
 }
-h2{
+.titulo{
     display: flex;
-    justify-content:flex-start;
+    align-items: center;
 }
 .bem-vindo-box {
     display: grid;
